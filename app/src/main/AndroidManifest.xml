@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.funtrip.funtrip">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".Splashscreen"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name=".Services.RandomNumberService"
+                android:enabled="true"
+                android:exported="true"/>
+
+        <activity
+                android:name=".Activities.Login"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Activities.Register"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Activities.Home"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+                android:label="@string/title_activity_home">
+        </activity>
+        <activity android:name=".Display">
+        </activity>
+
+        <receiver
+                android:name=".Activities.MyReceiver"
+                android:enabled="true"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name=".Activities.HotelRegistration"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.fragments.Hotel"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".Activities.DialogPopup">
+        </activity>
+        <activity android:name=".ui.fragments.Frag1">
+        </activity>
+        <activity
+                android:name=".Activities.ModalActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Activities.Book"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".Services.BackgroundServices">
+        </activity>
+        <activity android:name=".Activities.MyBookings">
+        </activity>
+    </application>
+
+</manifest>

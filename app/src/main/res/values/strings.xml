@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FunTrip</string>
+
+    <string name="hi">
+        <font fgcolor="#444444">Haven’t registered yet?</font>
+        <font fgcolor="#000000">Join now</font>
+    </string>
+
+
+    <string name="title_activity_home">FunTrip</string>
+    <string name="title_home">FunTrip</string>
+    <string name="title_location">MyBookings</string>
+    <string name="title_hotels">Hotels</string>
+    <string name="title_account">Account</string>
+
+    <string name="content">India Best Budget Hotels</string>
+    <string name="content1">450+ Budget Hotels | 40+ Cities</string>
+
+</resources>
